@@ -1,0 +1,2 @@
+alert tcp any any -> 10.0.0.1 any (msg:"MIGRATE";flags:PA;threshold:type threshold,track by_src,count 5,seconds 120;sid:1000001;)
+
